@@ -16,7 +16,7 @@ import type { Manifest } from './dotlottie-player';
 import { getFilename, isValidLottieJSON } from './utils';
 
 export class DotLottieLoader {
-  private _dotLottie?: Uint8Array;
+  private _dotLottie?: Uint8Array = null;
 
   private readonly _animationsMap: Map<string, AnimationData> = new Map();
 
